@@ -1,0 +1,28 @@
+[graph]
+# Azure AD Application (App Registration) ID
+client_id = YOUR_APPLICATION_ID
+
+# Azure AD Application Secret (Keep this private)
+client_secret = YOUR_CLIENT_SECRET_HERE
+
+# Azure Tenant ID (Directory ID)
+tenant_id = YOUR_TENANT_ID
+
+# The Microsoft 365 sender email used to send messages via Graph API
+sender_email = no-reply@example.com
+
+
+[smtp]
+# IP address to bind the SMTP relay to (0.0.0.0 listens on all interfaces)
+hostname = 0.0.0.0
+
+# Port to listen on for incoming SMTP requests (2525 is a common alternate to 25/587)
+port = 2525
+
+
+[security]
+# Allowed IP addresses (localhost and loopback interfaces in this case)
+allowed_ips = 127.0.0.1, ::1
+
+# Allowed CIDR ranges for trusted local networks
+allowed_cidrs = 192.168.1.0/24, 10.0.0.0/8
